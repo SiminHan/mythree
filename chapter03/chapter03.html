@@ -66,7 +66,6 @@ function init() {
     // create a cube
     var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
     var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xff3333,opacity:0.7,transparent:true});
-    
     //var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xff3333,opacity:0});
     var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
     cube.castShadow = true;
