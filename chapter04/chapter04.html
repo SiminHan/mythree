@@ -73,7 +73,7 @@ function init() {
     sphere.position.y = 3;
     sphere.position.z = 2;
 
-    
+
 
     for (var f = 0, fl = sphere.geometry.faces.length; f < fl; f++) {
         var face = sphere.geometry.faces[f];
@@ -85,11 +85,10 @@ function init() {
 
         var arrow = new THREE.ArrowHelper(
                 face.normal,
-                centroid,
+                face.centroid,
                 2,
-                0x3333FF,
-                0.5,
-                0.5);
+                0x3333FF
+               );
         sphere.add(arrow);
     }
 
